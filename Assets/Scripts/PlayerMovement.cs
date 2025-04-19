@@ -2,58 +2,97 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    public float laneDistance = 4f;
+    public float laneChangeSpeed = 10f;
+
+    public float jumpForce = 8f;
+    public float slideDuration = 1f;
+
     private CharacterController controller;
+    private Vector3 direction;
+    private int currentLane = 1;
+    private bool isSliding = false;
 
-    // Movimiento lateral
-    private int currentLane = 1; // 0 = izquierda (-4), 1 = centro (0), 2 = derecha (4)
-    private float laneDistance = 4f; // distancia entre carriles
-    private float moveSpeed = 10f;   // velocidad de desplazamiento lateral
+    private Animator animator;
 
-    // Salto
-    public float jumpForce = 3f;
-    public float gravity = 6f;
-    private float verticalVelocity;
+    // Hitbox para el slide
+    private float originalHeight;
+    private Vector3 originalCenter;
+    public float slideHeight = 1f;
+    public Vector3 slideCenterOffset = new Vector3(0f, -0.5f, 0f);
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+
+        
+        originalHeight = controller.height;
+        originalCenter = controller.center;
     }
 
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            currentLane = Mathf.Max(0, currentLane - 1);
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            currentLane = Mathf.Min(2, currentLane + 1);
-        }
-
-        
         if (controller.isGrounded)
         {
-            verticalVelocity = -1f;
+            direction.y = -1f;
+
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isRunning", !isSliding);
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                verticalVelocity = jumpForce;
+                direction.y = jumpForce;
+                animator.SetBool("isJumping", true);
+                animator.SetBool("isRunning", false);
+            }
+
+            if (Input.GetKeyDown(KeyCode.DownArrow) && !isSliding)
+            {
+                StartCoroutine(Slide());
             }
         }
         else
         {
-            verticalVelocity -= gravity * Time.deltaTime;
+            direction.y += Physics.gravity.y * Time.deltaTime * 2;
         }
 
-       
-        float targetX = (currentLane - 1) * laneDistance;
-        float newX = Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * moveSpeed);
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            currentLane = Mathf.Min(currentLane + 1, 2);
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            currentLane = Mathf.Max(currentLane - 1, 0);
 
-        Vector3 move = new Vector3(newX - transform.position.x, verticalVelocity, 0f); 
+        Vector3 targetPosition = transform.position.z * Vector3.forward;
+        if (currentLane == 0) targetPosition += Vector3.left * laneDistance;
+        else if (currentLane == 2) targetPosition += Vector3.right * laneDistance;
 
-        
-        controller.Move(move);
+        Vector3 moveDirection = Vector3.zero;
+        moveDirection.x = (targetPosition - transform.position).x * laneChangeSpeed;
+        moveDirection.y = direction.y;
+        moveDirection.z = direction.z;
+
+        controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    System.Collections.IEnumerator Slide()
+    {
+        isSliding = true;
+        animator.SetBool("isSliding", true);
+        animator.SetBool("isRunning", false);
+
+        // Reducimos hitbox
+        controller.height = slideHeight;
+        controller.center = originalCenter + slideCenterOffset;
+
+        yield return new WaitForSeconds(slideDuration);
+
+        // Restauramos hitbox
+        controller.height = originalHeight;
+        controller.center = originalCenter;
+
+        animator.SetBool("isSliding", false);
+        isSliding = false;
     }
 }
 

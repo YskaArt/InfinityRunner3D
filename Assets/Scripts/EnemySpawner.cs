@@ -3,16 +3,21 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [Header("Prefabs de Enemigos")]
-    public List<GameObject> enemyPrefabs; // Prefabs a spawnear
+    [Header("Prefabs de Secciones de Escenario")]
+    public List<GameObject> scenarioPrefabs; // Prefabs de bloques/obstáculos
 
-    [Header("Configuración de Spawner")]
-    public float spawnInterval = 2f;      
-    public Transform spawnPoint;           
-    public float laneDistance = 4f;        
-    public int numberOfLanes = 3;          
+    [Header("Configuración del Spawner")]
+    public float spawnInterval = 2f;            
+    public Transform spawnPoint;                
+    public float tileLength = 30f;              
 
     private float timer;
+    private Vector3 nextSpawnPosition;
+
+    void Start()
+    {
+        nextSpawnPosition = spawnPoint.position;
+    }
 
     void Update()
     {
@@ -20,28 +25,22 @@ public class EnemySpawner : MonoBehaviour
 
         if (timer >= spawnInterval)
         {
-            SpawnEnemy();
+            SpawnTile();
             timer = 0f;
         }
     }
 
-    void SpawnEnemy()
+    void SpawnTile()
     {
-        if (enemyPrefabs.Count == 0 || spawnPoint == null)
+        if (scenarioPrefabs.Count == 0 || spawnPoint == null)
             return;
 
+        int index = Random.Range(0, scenarioPrefabs.Count);
+        GameObject tile = Instantiate(scenarioPrefabs[index], nextSpawnPosition, Quaternion.identity);
+
+        // Avanza el punto de aparición para el siguiente bloque
+        nextSpawnPosition += Vector3.forward * tileLength;
+
         
-        int enemyIndex = Random.Range(0, enemyPrefabs.Count);
-        GameObject selectedEnemy = enemyPrefabs[enemyIndex];
-
-        // Selecciona un carril aleatorio 
-        int lane = Random.Range(0, numberOfLanes);
-        float xPos = (lane - 1) * laneDistance;
-
-        // Calcula posición final
-        Vector3 spawnPosition = new Vector3(xPos, spawnPoint.position.y, spawnPoint.position.z);
-
-        // Instancia el enemigo
-        Instantiate(selectedEnemy, spawnPosition, Quaternion.identity);
     }
 }
