@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 4426541314619092280}
   - component: {fileID: 1912565938996566514}
   - component: {fileID: 5673888114742487112}
+  - component: {fileID: 5427347665556092155}
   m_Layer: 0
   m_Name: Goldingots (9)
   m_TagString: Untagged
@@ -194,92 +195,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
---- !u!1 &327096051886541390
-GameObject:
+--- !u!114 &5427347665556092155
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3553358836635936859}
-  - component: {fileID: 4994796869359260820}
-  - component: {fileID: 3642802592528027474}
-  m_Layer: 0
-  m_Name: object2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3553358836635936859
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327096051886541390}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5923063316487345577}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4994796869359260820
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327096051886541390}
-  m_Mesh: {fileID: 4111032784520247101, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
---- !u!23 &3642802592528027474
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327096051886541390}
+  m_GameObject: {fileID: 110954908140271655}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 3590579580035318843, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &399783951489370255
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +392,7 @@ GameObject:
   - component: {fileID: 3594959327805142285}
   - component: {fileID: 1587284946909495751}
   - component: {fileID: 4769404933515653245}
+  - component: {fileID: 743611616085119951}
   m_Layer: 0
   m_Name: Goldingots (2)
   m_TagString: Untagged
@@ -560,6 +489,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &743611616085119951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938955785649659922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &974091990272514369
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +514,7 @@ GameObject:
   - component: {fileID: 3558020421213244510}
   - component: {fileID: 1622518458964031636}
   - component: {fileID: 4806229527673899310}
+  - component: {fileID: 8505813089878725469}
   m_Layer: 0
   m_Name: Goldingots (5)
   m_TagString: Untagged
@@ -588,7 +531,7 @@ Transform:
   m_GameObject: {fileID: 974091990272514369}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: 0, y: -0.1, z: -8.29}
+  m_LocalPosition: {x: 0, y: -0.1, z: -7.31}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -668,6 +611,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &8505813089878725469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974091990272514369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &1001373593249142567
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +636,8 @@ GameObject:
   - component: {fileID: 3531275946813096504}
   - component: {fileID: 1649843080959751922}
   - component: {fileID: 4814933153008469832}
+  - component: {fileID: 8638545165829851139}
+  - component: {fileID: 3473037554592333202}
   m_Layer: 0
   m_Name: Goldingots
   m_TagString: Untagged
@@ -776,6 +734,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &8638545165829851139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001373593249142567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
+--- !u!114 &3473037554592333202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001373593249142567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &1063075251744433730
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +824,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6168302352133515981, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
+  - {fileID: 2100000, guid: a6e8f61f0ecac3549949bc2f71492c3a, type: 2}
   - {fileID: 8992934318045909824, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -875,6 +859,7 @@ GameObject:
   - component: {fileID: 3714632461183393339}
   - component: {fileID: 1470972574038518513}
   - component: {fileID: 4638301314030754635}
+  - component: {fileID: 6886473931929215043}
   m_Layer: 0
   m_Name: Goldingots (14)
   m_TagString: Untagged
@@ -891,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 1110433845628881700}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 0.96, z: 1.39}
+  m_LocalPosition: {x: -4, y: 1.51, z: 3.15}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,6 +956,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &6886473931929215043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110433845628881700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &1141691521608646641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1412,7 @@ GameObject:
   - component: {fileID: 2794497821686669520}
   - component: {fileID: 84719292535034906}
   - component: {fileID: 6132640471195051424}
+  - component: {fileID: 9099770242701244640}
   m_Layer: 0
   m_Name: Goldingots (13)
   m_TagString: Untagged
@@ -1510,6 +1509,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &9099770242701244640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885890931203503567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &1956930149881379990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +1534,7 @@ GameObject:
   - component: {fileID: 2867775518123567497}
   - component: {fileID: 11423832787246403}
   - component: {fileID: 6061821257256430841}
+  - component: {fileID: 4459123821759587737}
   m_Layer: 0
   m_Name: Goldingots (6)
   m_TagString: Untagged
@@ -1538,7 +1551,7 @@ Transform:
   m_GameObject: {fileID: 1956930149881379990}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: 4, y: -0.1, z: -6.77}
+  m_LocalPosition: {x: 4, y: -0.1, z: -4.89}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1618,6 +1631,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &4459123821759587737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956930149881379990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &2177720494242443638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1656,7 @@ GameObject:
   - component: {fileID: 2512122907603756137}
   - component: {fileID: 376100254841770147}
   - component: {fileID: 5840977999551832345}
+  - component: {fileID: 5296629343546596447}
   m_Layer: 0
   m_Name: Goldingots (16)
   m_TagString: Untagged
@@ -1646,7 +1673,7 @@ Transform:
   m_GameObject: {fileID: 2177720494242443638}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 0.1, z: 5.3899956}
+  m_LocalPosition: {x: -4, y: 0.1, z: 8.17}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1726,6 +1753,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &5296629343546596447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177720494242443638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &2188674379776692436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,6 +1864,7 @@ GameObject:
   - component: {fileID: 2585026269408290228}
   - component: {fileID: 304886859567370622}
   - component: {fileID: 5768076759729512644}
+  - component: {fileID: 8846337942728539529}
   m_Layer: 0
   m_Name: Goldingots (3)
   m_TagString: Untagged
@@ -1920,6 +1961,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &8846337942728539529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2250621738375000235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &2285571372360326299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,92 +2146,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &2378229743481132311
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4533686462692789855}
-  - component: {fileID: 1422769817164628049}
-  - component: {fileID: 2640048692988418929}
-  m_Layer: 0
-  m_Name: object2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4533686462692789855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2378229743481132311}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7212079534616354530}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1422769817164628049
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2378229743481132311}
-  m_Mesh: {fileID: 4111032784520247101, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
---- !u!23 &2640048692988418929
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2378229743481132311}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 3590579580035318843, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2624392905596692116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +2158,7 @@ GameObject:
   - component: {fileID: 1769840199050343307}
   - component: {fileID: 4569828716167481153}
   - component: {fileID: 7736116233424434939}
+  - component: {fileID: 3343457258657987153}
   m_Layer: 0
   m_Name: Goldingots (8)
   m_TagString: Untagged
@@ -2286,6 +2255,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &3343457258657987153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624392905596692116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &2657918446395477153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,6 +2280,7 @@ GameObject:
   - component: {fileID: 1731310282692827582}
   - component: {fileID: 4603293233872891252}
   - component: {fileID: 7770206298475093198}
+  - component: {fileID: 3291516274278515944}
   m_Layer: 0
   m_Name: Goldingots (4)
   m_TagString: Untagged
@@ -2394,6 +2377,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &3291516274278515944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657918446395477153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &2734722526697003193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2476,92 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2789300814684974556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703442811741786508}
+  - component: {fileID: 4828643762980856794}
+  - component: {fileID: 5046881965379033748}
+  m_Layer: 0
+  m_Name: object23 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703442811741786508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789300814684974556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.145, y: 0, z: -7.0019994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4772239639315966811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4828643762980856794
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789300814684974556}
+  m_Mesh: {fileID: -6088122222418966595, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+--- !u!23 &5046881965379033748
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2789300814684974556}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 4253588671899480465, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3051145209772854267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2574,7 @@ GameObject:
   - component: {fileID: 121145437652257919}
   - component: {fileID: 2748825121219569717}
   - component: {fileID: 3531827183495770039}
+  - component: {fileID: 1399421968705663312}
   m_Layer: 0
   m_Name: Goldingots (21)
   m_TagString: Untagged
@@ -2588,6 +2671,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &1399421968705663312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051145209772854267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &3171721187605431679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +2696,7 @@ GameObject:
   - component: {fileID: 1216038575627440224}
   - component: {fileID: 3964517793703060650}
   - component: {fileID: 7148255319096644880}
+  - component: {fileID: 3377971233803883594}
   m_Layer: 0
   m_Name: Goldingots (7)
   m_TagString: Untagged
@@ -2696,6 +2793,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &3377971233803883594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171721187605431679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &3201362695881708148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,6 +2818,7 @@ GameObject:
   - component: {fileID: 1191638954668459883}
   - component: {fileID: 3993982693340148641}
   - component: {fileID: 7159040752720757275}
+  - component: {fileID: 6315020085610774943}
   m_Layer: 0
   m_Name: Goldingots (15)
   m_TagString: Untagged
@@ -2724,7 +2835,7 @@ Transform:
   m_GameObject: {fileID: 3201362695881708148}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 0.37, z: 3.3899956}
+  m_LocalPosition: {x: -4, y: 0.37, z: 5.36}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2804,6 +2915,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &6315020085610774943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201362695881708148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &3219935795581488268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,6 +3338,7 @@ GameObject:
   - component: {fileID: 346919820454223972}
   - component: {fileID: 2536783284716147886}
   - component: {fileID: 8575708353039705364}
+  - component: {fileID: 3128694870431793447}
   m_Layer: 0
   m_Name: Goldingots (10)
   m_TagString: Untagged
@@ -3310,6 +3435,105 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &3128694870431793447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050014267859547515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
+--- !u!1 &4071249120652957180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1756322608887057463}
+  - component: {fileID: 4239879511388256928}
+  - component: {fileID: 4884838850230174135}
+  m_Layer: 0
+  m_Name: object23 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1756322608887057463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071249120652957180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.902, y: 0, z: -7.0019994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4772239639315966811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4239879511388256928
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071249120652957180}
+  m_Mesh: {fileID: -6088122222418966595, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+--- !u!23 &4884838850230174135
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071249120652957180}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 4253588671899480465, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4154172939084398152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3375,6 +3599,92 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 4253588671899480465, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4391798833077293374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101390620090460948}
+  - component: {fileID: 8987523447030936509}
+  - component: {fileID: 5070143542639023012}
+  m_Layer: 0
+  m_Name: object6 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &101390620090460948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391798833077293374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.902, y: 0, z: -7.002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4772239639315966811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8987523447030936509
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391798833077293374}
+  m_Mesh: {fileID: 4376424609954383648, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+--- !u!23 &5070143542639023012
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4391798833077293374}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2512964428095778526, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3604,6 +3914,8 @@ Transform:
   - {fileID: 6458327391897363179}
   - {fileID: 3565931215139930807}
   - {fileID: 5139782375156152271}
+  - {fileID: 101390620090460948}
+  - {fileID: 6216352848133567205}
   - {fileID: 4808595957437483663}
   - {fileID: 228581856401762706}
   - {fileID: 9039173425341145703}
@@ -3621,6 +3933,8 @@ Transform:
   - {fileID: 346257248551359206}
   - {fileID: 3696445885544891861}
   - {fileID: 6513773679173720829}
+  - {fileID: 1756322608887057463}
+  - {fileID: 1703442811741786508}
   - {fileID: 2474935158358869395}
   - {fileID: 8929297343147341285}
   - {fileID: 5706204492866941084}
@@ -3672,6 +3986,7 @@ GameObject:
   - component: {fileID: 8108201046493281735}
   - component: {fileID: 6296853259608803597}
   - component: {fileID: 240262077666687159}
+  - component: {fileID: 7089027846959159702}
   m_Layer: 0
   m_Name: Goldingots (18)
   m_TagString: Untagged
@@ -3688,7 +4003,7 @@ Transform:
   m_GameObject: {fileID: 5503986834571651288}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 2.47, z: -2.94}
+  m_LocalPosition: {x: -4.1, y: 3.76, z: -2.19}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3768,6 +4083,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &7089027846959159702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503986834571651288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &5560278855565251113
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,6 +4367,7 @@ GameObject:
   - component: {fileID: 8345642315810838138}
   - component: {fileID: 6067855243516797616}
   - component: {fileID: 604227535688458}
+  - component: {fileID: 5958361645243215729}
   m_Layer: 0
   m_Name: Goldingots (19)
   m_TagString: Untagged
@@ -4055,7 +4384,7 @@ Transform:
   m_GameObject: {fileID: 5707650904168121189}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 1.46, z: -0.05}
+  m_LocalPosition: {x: -4, y: 2.75, z: 1.1}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4135,6 +4464,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &5958361645243215729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5707650904168121189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &5755482392439829582
 GameObject:
   m_ObjectHideFlags: 0
@@ -4307,6 +4649,7 @@ GameObject:
   - component: {fileID: 7961671255162325011}
   - component: {fileID: 5303409240599395545}
   - component: {fileID: 2138648111367376227}
+  - component: {fileID: 7179296527982058677}
   m_Layer: 0
   m_Name: Goldingots (12)
   m_TagString: Untagged
@@ -4403,6 +4746,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &7179296527982058677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5951932329363299596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &5998837373944416001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,6 +4857,7 @@ GameObject:
   - component: {fileID: 7538789259517946813}
   - component: {fileID: 5727417273443426167}
   - component: {fileID: 1967123132630675149}
+  - component: {fileID: 3334141846828031787}
   m_Layer: 0
   m_Name: Goldingots (20)
   m_TagString: Untagged
@@ -4517,7 +4874,7 @@ Transform:
   m_GameObject: {fileID: 6087498742521904802}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5987628, y: -0.3761425, z: -0.3761425, w: 0.5987627}
-  m_LocalPosition: {x: -4, y: 1.83, z: -5.8}
+  m_LocalPosition: {x: -4, y: 2.32, z: -5.8}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4597,6 +4954,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &3334141846828031787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6087498742521904802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &6447221832256868115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,7 +4998,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1032168576177097624}
-  - {fileID: 3553358836635936859}
   - {fileID: 7073605170189911716}
   m_Father: {fileID: 8819166650523225529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5083,6 +5452,92 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &6912058437444421853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6216352848133567205}
+  - component: {fileID: 8407907334284449348}
+  - component: {fileID: 2091705458485872727}
+  m_Layer: 0
+  m_Name: object6 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6216352848133567205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912058437444421853}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.145, y: 0, z: -7.002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4772239639315966811}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8407907334284449348
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912058437444421853}
+  m_Mesh: {fileID: 4376424609954383648, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+--- !u!23 &2091705458485872727
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912058437444421853}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2512964428095778526, guid: 489ef05cbbe252c449bc7b0219373632, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6933240527239293557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,7 +5603,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6168302352133515981, guid: 40c70de3acbb6ac4bad27c989329da83, type: 3}
+  - {fileID: 2100000, guid: a6e8f61f0ecac3549949bc2f71492c3a, type: 2}
   - {fileID: 9036992374869631830, guid: 40c70de3acbb6ac4bad27c989329da83, type: 3}
   - {fileID: 3590579580035318843, guid: 40c70de3acbb6ac4bad27c989329da83, type: 3}
   m_StaticBatchInfo:
@@ -5238,6 +5693,7 @@ GameObject:
   - component: {fileID: 3395792446190482034}
   - component: {fileID: 1036266580388486170}
   - component: {fileID: 4980628883117434279}
+  - component: {fileID: 4178366112270808742}
   m_Layer: 0
   m_Name: Goldingots (17)
   m_TagString: Untagged
@@ -5334,6 +5790,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &4178366112270808742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173124658484280016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &7395375924824252091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,7 +6436,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 823230252627945562}
-  - {fileID: 4533686462692789855}
   - {fileID: 1455562381263910690}
   m_Father: {fileID: 8819166650523225529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6262,6 +6730,7 @@ GameObject:
   - component: {fileID: 4987117743305581261}
   - component: {fileID: 7120536686162220551}
   - component: {fileID: 3955926119143286717}
+  - component: {fileID: 1209868114456528570}
   m_Layer: 0
   m_Name: Goldingots (11)
   m_TagString: Untagged
@@ -6358,6 +6827,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &1209868114456528570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778014937830766546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &8791266894807437291
 GameObject:
   m_ObjectHideFlags: 0
@@ -6456,6 +6938,7 @@ GameObject:
   - component: {fileID: 5063513073061538457}
   - component: {fileID: 7035116324870282835}
   - component: {fileID: 3861483450626109417}
+  - component: {fileID: 8668152923011884365}
   m_Layer: 0
   m_Name: Goldingots (1)
   m_TagString: Untagged
@@ -6552,6 +7035,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.059715312, y: 0.06599999, z: 0.030433597}
   m_Center: {x: -0.02, y: -0.0000000011920929, z: 0.005216798}
+--- !u!114 &8668152923011884365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8836411521696169862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b5ca564037d04428dc369eff0c11f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 10
 --- !u!1 &8960546718912421771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6616,7 +7112,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6168302352133515981, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
+  - {fileID: 2100000, guid: a6e8f61f0ecac3549949bc2f71492c3a, type: 2}
   - {fileID: 8992934318045909824, guid: b490e22c22e777d49bebdc5a2ab4e9bc, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
