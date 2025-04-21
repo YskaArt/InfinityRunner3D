@@ -6,6 +6,8 @@ public class TimeScoreAdder : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Instance.isGameOver) return;
+
         ScoreManager.Instance.AddScore(pointsPerSecond * Time.deltaTime);
     }
 }

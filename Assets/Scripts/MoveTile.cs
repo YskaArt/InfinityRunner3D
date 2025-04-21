@@ -9,7 +9,9 @@ public class MoveTile : MonoBehaviour
 
     void Update()
     {
-        // Movimiento hacia atrás
+        if (GameManager.Instance.isGameOver) return;
+
+       
         transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
 
         // Contador de vida
@@ -19,5 +21,9 @@ public class MoveTile : MonoBehaviour
         {
             Destroy(gameObject); 
         }
+
+       
+
+        
     }
 }

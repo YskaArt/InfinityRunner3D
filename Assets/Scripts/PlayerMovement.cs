@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public float laneDistance = 4f;
     public float laneChangeSpeed = 10f;
-
     public float jumpForce = 8f;
     public float slideDuration = 1f;
 
@@ -22,14 +20,24 @@ public class PlayerMovement : MonoBehaviour
     public float slideHeight = 1f;
     public Vector3 slideCenterOffset = new Vector3(0f, -0.5f, 0f);
 
+    [Header("Audio")]
+    public AudioClip footstepSound;
+    public AudioClip slideSound;
+    public AudioClip deathSound;
+    public AudioClip jumpSound;
+
+    private AudioSource audioSource;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
-        
         originalHeight = controller.height;
         originalCenter = controller.center;
+
+        audioSource = GetComponent<AudioSource>();
+        if (!audioSource) audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -41,11 +49,18 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJumping", false);
             animator.SetBool("isRunning", !isSliding);
 
+            if (!isSliding && !audioSource.isPlaying && footstepSound)
+            {
+                PlaySound(footstepSound, true); // loop pisadas
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 direction.y = jumpForce;
                 animator.SetBool("isJumping", true);
                 animator.SetBool("isRunning", false);
+                audioSource.Stop(); // Cortamos las pisadas al saltar
+                PlaySound(jumpSound, false); // Sonido del salto
             }
 
             if (Input.GetKeyDown(KeyCode.DownArrow) && !isSliding)
@@ -81,18 +96,48 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isSliding", true);
         animator.SetBool("isRunning", false);
 
-        // Reducimos hitbox
         controller.height = slideHeight;
         controller.center = originalCenter + slideCenterOffset;
 
+        PlaySound(slideSound, false); // Reproducir sonido de deslizamiento
         yield return new WaitForSeconds(slideDuration);
 
-        // Restauramos hitbox
         controller.height = originalHeight;
         controller.center = originalCenter;
 
         animator.SetBool("isSliding", false);
         isSliding = false;
     }
-}
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Death"))
+        {
+            Die();
+        }
+    }
 
+
+    public void Die()
+    {
+        GameManager.Instance.GameOver();
+        animator.SetTrigger("Die");
+        audioSource.Stop();
+        PlaySound(deathSound, false);
+        enabled = false;
+    }
+
+    void PlaySound(AudioClip clip, bool loop)
+    {
+        if (clip == null) return;
+
+        audioSource.clip = clip;
+        audioSource.loop = loop;
+        audioSource.Play();
+    }
+    
+
+    
+
+
+
+}
