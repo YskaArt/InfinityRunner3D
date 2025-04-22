@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  maxLifetime: 60
+  destroyZPosition: -500
 --- !u!1 &4489500448109803701
 GameObject:
   m_ObjectHideFlags: 0
